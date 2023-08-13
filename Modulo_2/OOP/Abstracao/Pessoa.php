@@ -17,7 +17,7 @@ class Pessoa
         $this->idade = $idade;
     }
 
-    public function setNacionalidad(string $nacionalidade): void 
+    public function setNacionalidad(string $nacionalidade): void
     {
         $this->nacionalidade = $nacionalidade;
     }

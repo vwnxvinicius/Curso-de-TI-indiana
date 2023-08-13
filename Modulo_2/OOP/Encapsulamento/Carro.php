@@ -2,15 +2,26 @@
 
 class Carro 
 {
-    public string $cor;
+    private string $cor;
     public int $portas;
-    public int $velocidade;
+    private int $velocidade;
     public bool $faroisLigados;
     public bool $transmissaoManual;
+
+    public function __construct(int $portas, string $cor)
+    {
+        $this->portas =  $portas;
+        $this->cor = $cor;
+    }
 
     public function setCor(string $cor): void 
     {
         $this->cor = $cor;
+    }
+
+    public function getCor(): string 
+    {
+        return $this->cor;
     }
 
     public function setPortas(int $portas): void 
@@ -18,11 +29,18 @@ class Carro
         $this->portas = $portas;
     }
 
-    public function setVelocidade(int $velocidade): void
+    public function getVelocidade(): int 
     {
-        $this->velocidade = $velocidade;
+        return $this->velocidade;
     }
 
+    public function setVelocidade(int $velocidade): void
+    {
+        $velocidade = $velocidade < 0 ? 0 : $velocidade;
+
+        $this->velocidade = $velocidade;
+    }
+    
     public function setFarois(bool $faroisLigados): void 
     {
         $this->faroisLigados = $faroisLigados;
@@ -32,5 +50,6 @@ class Carro
     {
         $this->transmissaoManual = $transmissaoManual;
     }
-    
 }
+
+$carro = new Carro(4, 'Branco');
