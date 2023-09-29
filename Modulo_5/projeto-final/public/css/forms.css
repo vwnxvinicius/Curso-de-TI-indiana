@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+form {
+    padding: 3em;
+    border: 1px solid white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 0.25s;
+}
+
+form:hover {
+    box-shadow: rgba(206, 205, 205, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(196, 196, 196, 0.12) 0px 4px 6px, rgba(223, 223, 223, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    border: none;
+}
+
+.file-input {
+    background-color: black;
+    color: white;
+}
+
+input, textarea {
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+input:focus, textarea:focus{
+    background-color: black;
+    color: white;
+}
+
+.check-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.check {
+    width: 16px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    width: 30%;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid white;
+    transition: 0.25s;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    border: white 1px solid;
+}
